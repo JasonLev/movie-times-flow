@@ -1,7 +1,10 @@
 import React from 'react';
 import './App.css';
+import MovieList from './components/MovieList'
 
 function App() {
+  const list = ["Batman", "Superman", "Aquaman"]
+
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +20,7 @@ function App() {
           Learn Flow
         </a>
       </header>
+      <MovieList list={list} />
     </div>
   );
 }
